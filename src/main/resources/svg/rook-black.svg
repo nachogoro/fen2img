@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="50" width="50">
+  <title>Rook</title>
+  <g stroke-miterlimit="4" stroke-dasharray="none" transform="matrix(1.5873016,0,0,1.5873016,-10.714286,-13.095238)">
+    <path stroke-linejoin="round" d="m9,39,27,0,0-3-27,0,0,3z" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-width="1.5"/>
+    <path stroke-linejoin="round" d="m12.5,32,1.5-2.5,17,0,1.5,2.5-20,0z" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-width="1.5"/>
+    <path stroke-linejoin="round" d="m12,36,0-4,21,0,0,4-21,0z" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-width="1.5"/>
+    <path stroke-linejoin="miter" d="m14,29.5,0-13,17,0,0,13-17,0z" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-width="1.5"/>
+    <path stroke-linejoin="round" d="m14,16.5-3-2.5,23,0-3,2.5-17,0z" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-width="1.5"/>
+    <path stroke-linejoin="round" d="m11,14,0-5,4,0,0,2,5,0,0-2,5,0,0,2,5,0,0-2,4,0,0,5-23,0z" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-width="1.5"/>
+    <path stroke-linejoin="miter" d="m12,35.5,21,0,0,0" stroke="#FFF" stroke-linecap="round" stroke-width="1" fill="none"/>
+    <path stroke-linejoin="miter" d="m13,31.5,19,0" stroke="#FFF" stroke-linecap="round" stroke-width="1" fill="none"/>
+    <path stroke-linejoin="miter" d="m14,29.5,17,0" stroke="#FFF" stroke-linecap="round" stroke-width="1" fill="none"/>
+    <path stroke-linejoin="miter" d="m14,16.5,17,0" stroke="#FFF" stroke-linecap="round" stroke-width="1" fill="none"/>
+    <path stroke-linejoin="miter" d="m11,14,23,0" stroke="#FFF" stroke-linecap="round" stroke-width="1" fill="none"/>
+  </g>
+</svg>

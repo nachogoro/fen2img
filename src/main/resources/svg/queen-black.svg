@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="50" width="50">
+  <title>Queen</title>
+  <g transform="matrix(1.2987013,0,0,1.2987013,-4.2207793,-5.157942)">
+    <g fill="#000" fill-rule="evenodd">
+      <circle d="M 8.75,12 C 8.75,13.518783 7.5187831,14.75 6,14.75 4.4812169,14.75 3.25,13.518783 3.25,12 3.25,10.481217 4.4812169,9.25 6,9.25 c 1.5187831,0 2.75,1.231217 2.75,2.75 z" cy="12" cx="6" r="2.75"/>
+      <circle d="m 16.75,9 c 0,1.518783 -1.231217,2.75 -2.75,2.75 -1.518783,0 -2.75,-1.231217 -2.75,-2.75 0,-1.5187831 1.231217,-2.75 2.75,-2.75 1.518783,0 2.75,1.2312169 2.75,2.75 z" cy="9" cx="14" r="2.75"/>
+      <circle d="m 25.25,8 c 0,1.5187831 -1.231217,2.75 -2.75,2.75 -1.518783,0 -2.75,-1.2312169 -2.75,-2.75 0,-1.5187831 1.231217,-2.75 2.75,-2.75 1.518783,0 2.75,1.2312169 2.75,2.75 z" cy="8" cx="22.5" r="2.75"/>
+      <circle d="m 33.75,9 c 0,1.518783 -1.231217,2.75 -2.75,2.75 -1.518783,0 -2.75,-1.231217 -2.75,-2.75 0,-1.5187831 1.231217,-2.75 2.75,-2.75 1.518783,0 2.75,1.2312169 2.75,2.75 z" cy="9" cx="31" r="2.75"/>
+      <circle d="m 41.75,12 c 0,1.518783 -1.231217,2.75 -2.75,2.75 -1.518783,0 -2.75,-1.231217 -2.75,-2.75 0,-1.518783 1.231217,-2.75 2.75,-2.75 1.518783,0 2.75,1.231217 2.75,2.75 z" cy="12" cx="39" r="2.75"/>
+    </g>
+
+    <path stroke-linejoin="round" d="m9,26c8.5-1.5,21-1.5,27,0l2.5-12.5-7.5,11.5-0.3-14.1-5.2,13.6-3-14.5-3,14.5-5.2-13.6-0.3,14.1-7.5-11.5,2.5,12.5z" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1.5"/>
+    <path stroke-linejoin="round" d="m9,26c0,2,1.5,2,2.5,4,1,1.5,1,1,0.5,3.5-1.5,1-1.5,2.5-1.5,2.5-1.5,1.5,0.5,2.5,0.5,2.5,6.5,1,16.5,1,23,0,0,0,1.5-1,0-2.5,0,0,0.5-1.5-1-2.5-0.5-2.5-0.5-2,0.5-3.5,1-2,2.5-2,2.5-4-8.5-1.5-18.5-1.5-27,0z" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1.5"/>
+    <path stroke-linejoin="round" d="m11,38.5a35,35,0,0,0,23,0" stroke="#000" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1.5" fill="none"/>
+    <path stroke-linejoin="round" d="m11,29a35,35,0,0,1,23,0" stroke="#FFF" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1.5" fill="none"/>
+    <path stroke-linejoin="round" d="m12.5,31.5,20,0" stroke="#FFF" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1.5" fill="none"/>
+    <path stroke-linejoin="round" d="m11.5,34.5a35,35,0,0,0,22,0" stroke="#FFF" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1.5" fill="none"/>
+    <path stroke-linejoin="round" d="m10.5,37.5a35,35,0,0,0,24,0" stroke="#FFF" stroke-linecap="round" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="1.5" fill="none"/>
+  </g>
+</svg>
