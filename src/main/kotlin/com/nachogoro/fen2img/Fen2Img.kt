@@ -19,7 +19,7 @@ class Fen2Img(config: Config = Config()) {
     fun Fen2Svg(fen: String): String {
         val dimensionsPx = 400
         val squareSize = dimensionsPx / 8
-        val paddingFraction = 0.1
+        val paddingFraction = 0.15
         val pieceSizeFraction = 1 - 2*paddingFraction
         val pieceOffset = paddingFraction * squareSize
 
