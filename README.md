@@ -7,43 +7,61 @@ Convert FEN (Forsyth–Edwards Notation) strings into visual representations, ei
 - Provides default piece images, but allows for easy overrides with custom SVGs.
 - Efficient caching mechanism for SVG data retrieval.
 
-## Getting Started
+## Installation
+You may follow the instructions in [jitpack.io](https://jitpack.io/#nachogoro/fen2img/0.1.0-alpha)
 
-### Installation
-TO-DO
+**Step 1: Add the JitPack repository to your build.gradle file**
+Add it in your root `build.gradle` at the end of repositories:
+```groovy
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
 
-### Usage
-1. **Create the image generator object:**
+**Step 2: Add the dependency to your project**
+```groovy
+dependencies {
+    implementation 'com.github.nachogoro:fen2img:0.1.0-alpha'
+}
+```
+
+## Usage
+**1. Create the image generator object:**
    ```kotlin
    val fenConverter = Fen2Img()
    ```
    The `Config` class can be used to customize the images, see section [Customizing the board](#customizing-the-board).
 
-2. **Convert FEN to SVG:**
+**2. Convert FEN to SVG:**
    ```kotlin
    val svgString = fenConverter.Fen2Svg("[YOUR_FEN_STRING]")
    ```
    
-3. **Convert FEN to PNG:**
+**3. Convert FEN to PNG:**
 The following code converts a FEN string to a 400x400 pixels PNG image:
    ```kotlin
    val pngString = fenConverter.Fen2Png("[YOUR_FEN_STRING]", 400)
    ```
 
-### Customizing the board
-#### Player Orientation
+## Customizing the board
+You can pass your own `Config` object to the constructor of `Fen2Img`, to customize your images.
+
+### Player Orientation
 You can set the orientation of the board to be from either the white or black player's perspective:
 ```kotlin
 val config = Config(orientation = Player.BLACK)
 ```
 
-#### Board Colors
+### Board Colors
 Customize the colors of the chessboard's light and dark squares:
 ```kotlin
 val config = Config(lightSquareColor = "#FFFFFF", darkSquareColor = "#000000")
 ```
 
-#### Custom SVGs for Pieces
+### Custom SVGs for Pieces
 Override the default SVGs for pieces by providing a map of piece characters to their custom SVG string representations:
 ```kotlin
 val customSvgMap: Map<Char, String> = mapOf('K' to customKingSvg, 'Q' to customQueenSvg)
