@@ -1,3 +1,4 @@
+[![](https://jitpack.io/v/nachogoro/fen2img.svg)](https://jitpack.io/#nachogoro/fen2img)
 # FEN to Image Library
 Convert FEN (Forsyth–Edwards Notation) strings into visual representations, either in SVG (Scalable Vector Graphics) or PNG (Portable Network Graphics) formats.
 
