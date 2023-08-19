@@ -6,9 +6,19 @@ import org.w3c.dom.Document
 import org.w3c.dom.Element
 import javax.xml.parsers.DocumentBuilderFactory
 
+/**
+ * Generates an SVG representation of an empty chessboard.
+ *
+ * @param config Configuration parameters for the board such as colors and orientation.
+ * @param dimensionsPx The size of the board in pixels.
+ * @return The SVG document representing the chessboard.
+ *
+ * The board will be divided into 8x8 squares. Each square's size is computed based on the provided dimension.
+ * Additionally, labels for ranks (numbers) and files (letters) are added to the board.
+ */
 fun emptyBoardSvg(config: Config, dimensionsPx: Int): Document {
     val squareSize = dimensionsPx / 8
-    val labelOffset = squareSize * 0.05  // Adjust as needed for label positioning
+    val labelOffset = squareSize * 0.05
 
     val ranks = arrayOf("8", "7", "6", "5", "4", "3", "2", "1")
     val files = arrayOf("a", "b", "c", "d", "e", "f", "g", "h")
@@ -58,6 +68,19 @@ fun emptyBoardSvg(config: Config, dimensionsPx: Int): Document {
     return chessBoardSVG
 }
 
+/**
+ * Adds a chess piece to the SVG representation of a chessboard.
+ *
+ * @param boardSVG The SVG document of the chessboard to which the piece should be added.
+ * @param pieceSVG The SVG representation of the chess piece to be added.
+ * @param x The horizontal position (from the left) on the board where the piece should be placed.
+ * @param y The vertical position (from the top) on the board where the piece should be placed.
+ * @param squareSize The size of each square on the board in pixels.
+ * @param pieceSizeFraction The fraction of the square size that the piece should occupy.
+ *
+ * The function computes the appropriate scale for the chess piece based on the provided square size and
+ * the intrinsic size of the piece. The piece is then translated to the specified position and scaled accordingly.
+ */
 fun addPieceToBoard(
     boardSVG: Document,
     pieceSVG: Document,
