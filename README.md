@@ -60,7 +60,7 @@ The following examples show different ways of displaying the board after:
 val fenConverter = Fen2Img()
 val svgData = fenConverter.Fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2 \n")
 ```
-![default](https://github.com/nachogoro/fen2img/assets/15671779/185b96d8-c084-4262-b9f7-fecd9cfb181d)
+![default](https://github.com/nachogoro/fen2img/assets/15671779/5134e61f-ccfc-4409-9b4c-4b287652de64)
 
 
 ### From black's perspective (SVG)
@@ -68,7 +68,7 @@ val svgData = fenConverter.Fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNB
 val fenConverter = Fen2Img(Config(orientation=Player.BLACK))
 val svgData = fenConverter.Fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2 \n")
 ```
-![from-black](https://github.com/nachogoro/fen2img/assets/15671779/f1f601fd-f538-41fb-ac34-aeaf9054e9ae)
+![black](https://github.com/nachogoro/fen2img/assets/15671779/df6b7c21-f46a-4fd2-84ba-0aafb9e8bc1c)
 
 ### Using chess.com colorscheme (500x500 PNG)
 ```kotlin
@@ -110,7 +110,7 @@ val fenConverter = Fen2Img(Config(
     svgData=mapOf('p' to duckData)))
 val svgData = fenConverter.Fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2 \n")
 ```
-![chesscom-ducks](https://github.com/nachogoro/fen2img/assets/15671779/2d6bb071-590f-49ce-b985-6c952ad8411e)
+![chesscom-ducks](https://github.com/nachogoro/fen2img/assets/15671779/675db32c-e140-4e13-ac80-dcdff012f7c6)
 
 
 ## Contributing
