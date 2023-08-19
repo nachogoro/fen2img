@@ -6,7 +6,6 @@ Convert FEN (Forsyth–Edwards Notation) strings into visual representations, ei
 - Customizable board colors, orientation, and piece SVGs.
 - Provides default piece images, but allows for easy overrides with custom SVGs.
 - Efficient caching mechanism for SVG data retrieval.
-- Supports both WHITE and BLACK board orientations.
 
 ## Getting Started
 
@@ -75,7 +74,7 @@ val svgData = fenConverter.Fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNB
 val fenConverter = Fen2Img(Config(lightSquareColor = "#ebecd0", darkSquareColor = "#779556"))
 val svgData = fenConverter.Fen2Png("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2 \n", 500)
 ```
-![chesscom](https://github.com/nachogoro/fen2img/assets/15671779/a4463f7f-49c5-4f8f-a141-d59d51916a15)
+<img src="https://github.com/nachogoro/fen2img/assets/15671779/a4463f7f-49c5-4f8f-a141-d59d51916a15" width="400" height="400">
 
 
 ### Using chess.com colorscheme and the black pawns are ducks (SVG)
