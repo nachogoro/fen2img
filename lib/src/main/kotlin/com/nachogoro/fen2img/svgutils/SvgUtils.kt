@@ -18,7 +18,9 @@ import javax.xml.parsers.DocumentBuilderFactory
  */
 fun emptyBoardSvg(config: Config, dimensionsPx: Int): Document {
     val squareSize = dimensionsPx / 8
-    val labelOffset = squareSize * 0.05
+    val labelVerticalOffset = squareSize * 0.08
+    val labelHorizontalOffset = squareSize * 0.05
+    val fontSizePx = squareSize*0.2
 
     val ranks = arrayOf("8", "7", "6", "5", "4", "3", "2", "1")
     val files = arrayOf("a", "b", "c", "d", "e", "f", "g", "h")
@@ -48,9 +50,11 @@ fun emptyBoardSvg(config: Config, dimensionsPx: Int): Document {
 
         // Add rank labels to the left-most cell
         val rankText = chessBoardSVG.createElement("text") as Element
-        rankText.setAttribute("x", "$labelOffset")
+        rankText.setAttribute("x", "$labelHorizontalOffset")
         rankText.setAttribute("y", "${squareSize * (i+0.25)}")
         rankText.setAttribute("fill", if (i % 2 != 0) config.lightSquareColor else config.darkSquareColor)
+        rankText.setAttribute("font-family", "Arial;Sans")
+        rankText.setAttribute("font-size", "${fontSizePx}px")
         rankText.textContent = if (config.orientation == Player.WHITE) ranks[i] else ranks[7-i]
         chessBoard.appendChild(rankText)
     }
@@ -58,9 +62,11 @@ fun emptyBoardSvg(config: Config, dimensionsPx: Int): Document {
     // Add file labels to the bottom-most cell
     for (j in 0 until 8) {
         val fileText = chessBoardSVG.createElement("text") as Element
-        fileText.setAttribute("x", "${squareSize * (j + 0.85)}")  // Adjust 0.85 for horizontal positioning
-        fileText.setAttribute("y", "${dimensionsPx - labelOffset}")
+        fileText.setAttribute("x", "${squareSize * j + 0.85*squareSize}")
+        fileText.setAttribute("y", "${dimensionsPx - labelVerticalOffset}")
         fileText.setAttribute("fill", if (j % 2 == 0) config.lightSquareColor else config.darkSquareColor)
+        fileText.setAttribute("font-family", "Arial;Sans")
+        fileText.setAttribute("font-size", "${fontSizePx}px")
         fileText.textContent = if (config.orientation == Player.WHITE) files[j] else files[7-j]
         chessBoard.appendChild(fileText)
     }
