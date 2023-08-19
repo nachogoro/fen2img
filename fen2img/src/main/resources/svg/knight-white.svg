@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="50" width="50">
+  <title>Knight</title>
+  <g stroke-linejoin="round" fill-rule="evenodd" transform="matrix(1.4912192,0,0,1.4925373,-7.8284143,-9.3283579)" stroke="#000" stroke-linecap="round" stroke-dasharray="none" stroke-miterlimit="4">
+    <path d="m22,10c10.5,1,16.5,8,16,29h-23c0-9,10-6.5,8-21" stroke-width="1.5" fill="#FFF"/>
+    <path d="m24,18c0.38,2.91-5.55,7.37-8,9-3,2-2.82,4.34-5,4-1.042-0.94,1.41-3.04,0-3-1,0,0.19,1.23-1,2-1,0-4.003,1-4-4,0-2,6-12,6-12s1.89-1.9,2-3.5c-0.73-0.994-0.5-2-0.5-3,1-1,3,2.5,3,2.5h2s0.78-1.992,2.5-3c1,0,1,3,1,3" stroke-width="1.5" fill="#FFF"/>
+    <path d="m9.5,25.5a0.5,0.5,0,0,1,-1,0,0.5,0.5,0,1,1,1,0z" stroke-width="1.5" fill="#000"/>
+    <path d="m14.933,15.75a0.49999,1.5,30.001,0,1,-0.866,-0.5,0.49999,1.5,30.001,0,1,0.866,0.5z" stroke-width="1.49996698" fill="#000"/>
+  </g>
+</svg>

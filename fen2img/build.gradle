@@ -1,0 +1,25 @@
+plugins {
+    // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
+    id 'org.jetbrains.kotlin.jvm' version '1.8.20'
+
+    // Apply the java-library plugin for API and implementation separation.
+    id 'java-library'
+}
+
+group = 'com.github.nachogoro'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.xmlgraphics:batik-codec:1.16'
+    implementation 'org.apache.xmlgraphics:batik-transcoder:1.16'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
