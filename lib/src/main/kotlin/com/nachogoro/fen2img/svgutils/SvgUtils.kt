@@ -66,7 +66,9 @@ fun addPieceToBoard(
     squareSize: Double,
     pieceSizeFraction: Double)
 {
-    val pieceSize: Double = pieceSVG.documentElement.getAttribute("height").toDouble()
+    // Ignore units in height attribute
+    val pieceSize: Double = pieceSVG.documentElement.getAttribute("height")
+        .replace(Regex("[^\\d.]"), "").toDouble()
     val pieceScale = squareSize / pieceSize * pieceSizeFraction
 
     // Wrap the piece SVG in a <g> element with a transform attribute to adjust its position and size

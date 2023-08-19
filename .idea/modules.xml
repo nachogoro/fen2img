@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/fen2img.iml" filepath="$PROJECT_DIR$/fen2img.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/fen2img.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/fen2img.lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/fen2img.lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/fen2img.lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/fen2img.lib.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/fen2img.lib.test.iml" />
     </modules>
   </component>
 </project>

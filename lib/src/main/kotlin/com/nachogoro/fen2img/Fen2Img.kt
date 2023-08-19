@@ -12,10 +12,27 @@ import javax.xml.transform.TransformerFactory
 import javax.xml.transform.dom.DOMSource
 import javax.xml.transform.stream.StreamResult
 
+/**
+ * Converts a FEN (Forsyth–Edwards Notation) string representation of a chessboard to visual representations
+ * in SVG (Scalable Vector Graphics) and PNG (Portable Network Graphics) formats.
+ *
+ * This class takes into account configuration options like custom piece SVGs and board orientation.
+ *
+ * @property config The configuration parameters used for the FEN to image conversion.
+ */
 class Fen2Img(config: Config = Config()) {
     private val _config: Config = config
     private val _svgProvider = PieceSvgDataProvider(_config.svgData)
 
+    /**
+     * Converts a FEN string representation of a chessboard to its SVG representation.
+     *
+     * This method produces a full SVG representation of the chessboard based on the provided FEN string.
+     * It will adjust the pieces and board orientation based on the configuration provided during instantiation.
+     *
+     * @param fen The FEN string representation of the chessboard.
+     * @return The SVG string representation of the chessboard.
+     */
     fun Fen2Svg(fen: String): String {
         val dimensionsPx = 400
         val squareSize = dimensionsPx / 8
@@ -62,6 +79,17 @@ class Fen2Img(config: Config = Config()) {
         return writer.toString()
     }
 
+    /**
+     * Converts a FEN string representation of a chessboard to a PNG byte array.
+     *
+     * This method first converts the FEN to SVG format and then transcodes the SVG to a PNG byte array.
+     * This allows for a rasterized, portable representation of the chessboard. The resulting PNG will
+     * have a size defined by the `boardPx` parameter.
+     *
+     * @param fen The FEN string representation of the chessboard.
+     * @param boardPx The desired size (in pixels) of the resulting PNG image's width and height.
+     * @return A ByteArray representation of the PNG image.
+     */
     fun Fen2Png(fen: String, boardPx: Int): ByteArray {
         val svgData = Fen2Svg(fen)
         val transcoder = PNGTranscoder()
