@@ -64,13 +64,13 @@ android {
 
 **2. Convert FEN to SVG:**
    ```kotlin
-   val svgString = fenConverter.Fen2Svg("[YOUR_FEN_STRING]")
+   val svgString = fenConverter.fen2Svg("[YOUR_FEN_STRING]")
    ```
    
 **3. Convert FEN to PNG:**
 The following code converts a FEN string to a 400x400 pixels PNG image:
    ```kotlin
-   val pngString = fenConverter.Fen2Png("[YOUR_FEN_STRING]", 400)
+   val pngString = fenConverter.fen2Png("[YOUR_FEN_STRING]", 400)
    ```
 
 ## Customizing the board
@@ -102,7 +102,7 @@ The following examples show different ways of displaying the board after:
 ### Default image (SVG)
 ```kotlin
 val fenConverter = Fen2Img()
-val svgData = fenConverter.Fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2")
+val svgData = fenConverter.fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2")
 ```
 ![default](https://github.com/nachogoro/fen2img/assets/15671779/5134e61f-ccfc-4409-9b4c-4b287652de64)
 
@@ -110,14 +110,14 @@ val svgData = fenConverter.Fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNB
 ### From black's perspective (SVG)
 ```kotlin
 val fenConverter = Fen2Img(Config(orientation=Player.BLACK))
-val svgData = fenConverter.Fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2")
+val svgData = fenConverter.fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2")
 ```
 ![black](https://github.com/nachogoro/fen2img/assets/15671779/df6b7c21-f46a-4fd2-84ba-0aafb9e8bc1c)
 
 ### Using chess.com colorscheme (500x500 PNG)
 ```kotlin
 val fenConverter = Fen2Img(Config(lightSquareColor = "#ebecd0", darkSquareColor = "#779556"))
-val svgData = fenConverter.Fen2Png("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2", 500)
+val svgData = fenConverter.fen2Png("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2", 500)
 ```
 <img src="https://github.com/nachogoro/fen2img/assets/15671779/a4463f7f-49c5-4f8f-a141-d59d51916a15" width="400" height="400">
 
@@ -152,7 +152,7 @@ val fenConverter = Fen2Img(Config(
    lightSquareColor = "#ebecd0",
    darkSquareColor = "#779556",
     svgData=mapOf('p' to duckData)))
-val svgData = fenConverter.Fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2")
+val svgData = fenConverter.fen2Svg("rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2")
 ```
 ![chesscom-ducks](https://github.com/nachogoro/fen2img/assets/15671779/675db32c-e140-4e13-ac80-dcdff012f7c6)
 
