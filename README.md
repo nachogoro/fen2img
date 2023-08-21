@@ -39,6 +39,21 @@ dependencies {
     implementation 'com.github.nachogoro:fen2img:0.1.0'
 }
 ```
+### Packaging issue in Android
+This project depends on Apache Commons' Batik, which itself pulls `xml-apis` and `xml-apis-ext`. Both of those dependencies have similarly-named license files. If you pull this library into an Android application and attempt to build it, you may get some conflicts regarding those files.
+
+You may need to resolve that via `ResourcesPackagingOptions` in your `build.gradle` file. You may decide, for example, to only keep one the first of them:
+```groovy
+android {
+    packagingOptions {
+        pickFirst("license/NOTICE")
+        pickFirst("license/LICENSE.dom-documentation.txt")
+        pickFirst("license/README.dom.txt")
+        pickFirst("license/LICENSE.dom-software.txt")
+        pickFirst("license/LICENSE")
+    }
+}
+```
 
 ## Usage
 **1. Create the image generator object:**
